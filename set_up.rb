@@ -1,2 +1,2 @@
-puts "hi"
-puts "Hello"
+puts docking_station = DockingStation.new
+
