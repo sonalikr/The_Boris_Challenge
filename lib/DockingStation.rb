@@ -24,7 +24,7 @@ class DockingStation
       puts "bike docked"
       @bike_storage.push(bike)
     else
-      fail
+      raise 
     end
   end
 end

@@ -25,7 +25,7 @@ describe DockingStation do
   it "dock 2" do
 
     docking_station = DockingStation.new
-    expect(docking_station.dock("test")).to raise_error("test")
+    expect{docking_station.dock("test")}.to raise_error "test"
   end
 
 end
