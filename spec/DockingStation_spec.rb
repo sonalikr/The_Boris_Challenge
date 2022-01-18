@@ -11,3 +11,21 @@ describe "Test" do
     expect(new_bike).to respond_to(:working?)
   end
 end
+
+describe DockingStation do
+  it "Dock bike" do
+    docking_station = DockingStation.new
+    new_bike = Bike.new
+    docking_station.dock(new_bike)
+    expect(docking_station.bike_storage).to include new_bike
+  end
+end
+
+describe DockingStation do
+  it "dock 2" do
+
+    docking_station = DockingStation.new
+    expect(docking_station.dock("test")).to raise_error("test")
+  end
+
+end
